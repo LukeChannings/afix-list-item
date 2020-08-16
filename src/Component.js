@@ -45,7 +45,7 @@ const template = html`
   </style>
 `;
 
-export default class Component extends HTMLElement {
+export default class ListItem extends HTMLElement {
   constructor() {
     super();
 
@@ -55,7 +55,9 @@ export default class Component extends HTMLElement {
   }
 }
 
-customElements.define("afix-list-item", Component);
+export const { ListItem }
+
+customElements.define("afix-list-item", ListItem);
 
 /**
  * makeTemplate is a template tag used to construct a <template>.
