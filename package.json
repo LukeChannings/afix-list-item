@@ -1,6 +1,6 @@
 {
   "name": "afix-list-item",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A list item component supporting touch friendly swipe controls",
   "main": "src/Component.js",
   "module": "src/Component.js",
