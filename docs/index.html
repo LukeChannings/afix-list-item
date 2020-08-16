@@ -5,8 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Example</title>
     <script src="../src/Component.js" type="module"></script>
+    <style>
+      * {box-sizing: border-box;}
+      body { margin: 0; padding: 0 }
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+
+      afix-list-item::part(root) {
+        background-color: #ddd;
+        margin-bottom: 0.25rem;
+      }
+
+      .delete-button {
+        background-color: rgb(211, 32, 32);
+        height: 100%;
+        width: 100%;
+        border: none;
+        color: white;
+        font-size: large;
+        padding: 0 2rem;
+      }
+
+      .edit-button {
+        background-color: rgb(99, 99, 99);
+        height: 100%;
+        width: 100%;
+        border: none;
+        color: white;
+        font-size: large;
+        padding: 0 2rem;
+      }
+
+      @media screen and (min-width: 48em) {
+        ul {
+          padding: 0;
+          margin: 1rem 1rem 0;
+        }
+
+        afix-list-item::part(root) {
+          border-radius: 10px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <afix-list-item />
+    <ul>
+      <afix-list-item>
+        <p slot="content">Item 1</p>
+        <button class="delete-button" slot="controls">Delete</button>
+      </afix-list-item>
+      <afix-list-item>
+        <p slot="content">Item 2</p>
+        <button class="delete-button" slot="controls">Delete</button>
+      </afix-list-item>
+      <afix-list-item>
+        <p slot="content">Item 3</p>
+        <button class="edit-button" slot="controls">Edit</button>
+        <button class="delete-button" slot="controls">Delete</button>
+      </afix-list-item>
+      <afix-list-item>
+        <p slot="content">Item 4</p>
+        <button class="delete-button" slot="controls">Delete</button>
+      </afix-list-item>
+      <afix-list-item>
+        <p slot="content">Item 5</p>
+        <button class="delete-button" slot="controls">Delete</button>
+      </afix-list-item>
+    </ul>
   </body>
 </html>
