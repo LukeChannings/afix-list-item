@@ -49,8 +49,6 @@ export default class Component extends HTMLElement {
   constructor() {
     super();
 
-    this.tabIndex = 0;
-
     this.attachShadow({ mode: "open" }).appendChild(
       template.content.cloneNode(true)
     );
