@@ -19,7 +19,7 @@ export default class Component extends HTMLElement {
   }
 }
 
-customElements.define("name-afix-component", Component);
+customElements.define("afix-list-item", Component);
 
 /**
  * makeTemplate is a template tag used to construct a <template>.

@@ -1,25 +1,25 @@
-# name-long-afix-component
+# List Item
 
-description-afix-component
+A list item component supporting touch friendly swipe controls
 
 ## Using it
 
 Try it out directly (requires a modern browser)
 
 ```html
-<script src="https://cdn.skypack.dev/name-afix-component@latest" type="module"></script>
+<script src="https://cdn.skypack.dev/afix-list-item@latest" type="module"></script>
 ```
 
 Or install with
 
 ```bash
-npm install name-afix-component
+npm install afix-list-item
 ```
 
 And use like this
 
 ```js
-import "name-afix-component"`
+import "afix-list-item"`
 ```
 
 ### Attributes
