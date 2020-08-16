@@ -55,7 +55,7 @@ export default class ListItem extends HTMLElement {
   }
 }
 
-export const { ListItem }
+export { ListItem }
 
 customElements.define("afix-list-item", ListItem);
 
