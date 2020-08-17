@@ -18,6 +18,7 @@ const template = html`
       overflow: auto;
       scroll-snap-type: x mandatory;
       scrollbar-width: none;
+      overscroll-behavior: none;
     }
 
     .root::-webkit-scrollbar {
